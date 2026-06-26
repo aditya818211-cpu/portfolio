@@ -149,7 +149,7 @@ const projectData = [
       "Delivered a complete vice assembly with a clear functional mechanism and a clean engineering presentation.",
     mainImg: "Pipe Vice Assembly/Pipe Vice Assembly.PNG",
     gallery: [
-      "Pipe Vice Assembly/Pipe Vice Assembly.PNG",
+      "Pipe Vice Assembly.PNG",
       "Pipe Vice Assembly/Pipe Vice Assembly.mp4"
     ],
     downloads: [{ label: "SolidWorks Assembly (.SLDASM)", path: "Pipe Vice Assembly/Pipe Vice Assembly.SLDASM" }],
