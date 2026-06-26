@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Pal | Mechanical Design Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#030712] text-slate-100 overflow-x-hidden selection:bg-orange-500 selection:text-white">
+  <div class="page-grid"></div>
+  <div class="page-noise"></div>
+  <div class="ambient-glow"></div>
+
+  <div id="project-portal" class="project-portal hidden" aria-hidden="true">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+      <button
+        id="closePortalBtn"
+        class="portal-close"
+        aria-label="Close project"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="hidden md:flex portal-hint">
+        <span class="kbd">Esc</span><span class="hint-text">Close</span>
+        <span class="hint-dot">•</span>
+        <span class="kbd">←</span><span class="kbd">→</span><span class="hint-text">Media</span>
+      </div>
+
+      <div id="portal-content" class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-10 mt-14"></div>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="nav-shell">
+        <a href="#hero" class="brand-wrap">
+          <div class="brand-mark">AP</div>
+          <div>
+            <div class="brand-name">Aditya Pal</div>
+            <div class="brand-role">Mechanical Engineer</div>
+          </div>
+        </a>
+
+        <div class="hidden md:flex nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="Aditya_Pal_Resume.pdf" download class="btn btn-ghost">Resume</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+
+        <button id="mobileMenuBtn" class="md:hidden mobile-menu-btn" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu hidden md:hidden">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="Aditya_Pal_Resume.pdf" download class="mt-2 text-orange-400">Download Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-section">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-28 md:pt-36 pb-20 md:pb-28 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="space-y-7 reveal">
+          <div class="eyebrow">
+            <i class="fa-solid fa-compass-drafting text-orange-500"></i>
+            Mechanical Design Portfolio
+          </div>
+
+          <div class="space-y-5">
+            <h1 class="hero-title">
+              Precision CAD & <br>
+              <span>Product R&D</span>
+            </h1>
+
+            <p class="hero-copy">
+              Mechanical Engineer skilled in <strong class="text-white font-semibold">SolidWorks, DFM, and Rapid Prototyping</strong>, currently developing medical devices as a <strong class="text-orange-400 font-semibold">Mechanical Design Intern</strong> at Ripple Healthcare's R&D Department. Specialized in translating user needs into practical solutions through iterative design and testing.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="btn btn-primary btn-lg">Explore Projects</a>
+            <a href="Aditya_Pal_Resume.pdf" download class="btn btn-ghost btn-lg">Download Resume</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-value">CAD</div>
+              <div class="metric-label">SolidWorks & Assemblies</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">R&D</div>
+              <div class="metric-label">Prototyping & Validation</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">DFM</div>
+              <div class="metric-label">Manufacturing & Molding</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="hero-panel">
+            <div class="panel-top">
+              <div>
+                <div class="panel-label">Current Industry Attachment</div>
+                <div class="panel-title text-orange-400">Ripple Healthcare</div>
+                <div class="company-badge">R&D Mechanical Design Intern</div>
+                <p class="panel-copy">
+                  Spearheading medical device product development and iterative prototyping. Key contributor to "Stride," an assistive device for Parkinson's patients, managing enclosure design and integrated mounting architecture.
+                </p>
+              </div>
+              <div class="panel-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+            </div>
+
+            <div class="hero-panel-grid">
+              <div class="mini-panel">
+                <div class="mini-label">Core CAD Suite</div>
+                <div class="mini-value text-sky-400">SolidWorks</div>
+              </div>
+              <div class="mini-panel">
+                <div class="mini-label">Documentation</div>
+                <div class="mini-value text-sky-400">GD&T • DFM • DFA</div>
+              </div>
+              <div class="mini-panel">
+                <div class="mini-label">Prototyping</div>
+                <div class="mini-value text-sky-400">SLA/FDM 3D Printing</div>
+              </div>
+              <div class="mini-panel">
+                <div class="mini-label">Engineering Aim</div>
+                <div class="mini-value text-sky-400">Automation & Innovation</div>
+              </div>
+            </div>
+
+            <div class="hero-links">
+              <a target="_blank" href="https://www.linkedin.com/in/aditya-pal-86b47a264/" class="inline-link-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="Aditya_Pal_Resume.pdf" download class="inline-link-card">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-pad reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Profile Overview</div>
+          <h2 class="section-title">Translating User Needs into Practical Engineering Solutions</h2>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12">
+        <div class="content-panel">
+          <p class="lead-paragraph">
+            I am <strong class="text-orange-400 font-semibold">Aditya Pal</strong>, a Mechanical Engineer with hands-on expertise spanning conceptual CAD modeling to physical manufacturing processes. 
+          </p>
+          <p class="body-paragraph mt-4">
+            My engineering philosophy centers around problem-solving, rapid prototyping, and process-oriented design. Equipped with a strong framework in SolidWorks, complex assemblies, and GD&T, I focus on turning real-world requirements into high-fidelity parametric models optimized for manufacturing (DFM/DFA). 
+          </p>
+          <p class="body-paragraph mt-4">
+            Whether researching nano-graphene reinforced composites, observing high-volume HDPE injection molding operations at Poly White Pvt. Ltd., or currently developing the "Stride" assistive device for Parkinson's patients at Ripple Healthcare, I excel at closing the loop between initial user research and final product validation.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Parametric Layouts</h3>
+            <p>Developing fully constrained modeling schemes, robust geometric sub-assemblies, and functional interference checks.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-cube"></i></div>
+            <h3>Rapid Prototyping</h3>
+            <p>Utilizing SLA/FDM 3D printing workflows to translate digital models into testable MVPs quickly and efficiently.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Product Support</h3>
+            <p>Executing continuous engineering updates and usability testing to iterate designs based on physical prototype feedback.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>DFM & Quality</h3>
+            <p>Designing structures configured accurately for production, applying GD&T, FMEA, and industrial manufacturing practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section-pad section-muted reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Professional History</div>
+          <h2 class="section-title">Industry & R&D Exposure</h2>
+        </div>
+      </div>
+
+      <div class="xp-container mt-10 space-y-12">
+        <div class="xp-item relative pl-8 md:pl-12 border-l border-slate-800 pb-2">
+          <div class="xp-dot"></div>
+          
+          <div class="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-8 items-start">
+            <div>
+              <span class="xp-date">April 2026 - Present</span>
+              <h3 class="text-xl font-bold text-white mt-1">Mechanical Design Intern</h3>
+              <div class="text-orange-400 font-semibold mt-0.5">Ripple Healthcare (R&D)</div>
+            </div>
+            
+            <div class="content-panel bg-[#091026]/40 border-slate-800/80">
+              <h4 class="text-slate-200 font-bold mb-3 uppercase tracking-wider text-xs text-sky-400">Core Responsibilities & Technical Work</h4>
+              <ul class="space-y-2.5 text-slate-300 text-sm">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-check text-orange-500 text-xs mt-1 flex-shrink-0"></i>
+                  <span>Drive medical device product development through iterative design validation and rapid <strong>SLA/FDM 3D prototyping</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-check text-orange-500 text-xs mt-1 flex-shrink-0"></i>
+                  <span>Collaborate directly on design improvements based on physical testing results, user requirements, and identified manufacturing issues.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-microscope text-orange-500 text-xs mt-1 flex-shrink-0"></i>
+                  <span><strong>Project Stride (Assistive Device for Parkinson's):</strong> Designed the primary enclosure and internal mounting architecture, integrating complex electronic and mechanical components into a validated MVP following rigorous usability testing.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="xp-item relative pl-8 md:pl-12 border-l border-slate-800 pb-2">
+          <div class="xp-dot" style="background: var(--steel-blue); box-shadow: 0 0 10px var(--steel-blue);"></div>
+          
+          <div class="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-8 items-start">
+            <div>
+              <span class="xp-date">June 2024 - July 2024</span>
+              <h3 class="text-xl font-bold text-white mt-1">Manufacturing Intern</h3>
+              <div class="text-steel-blue font-semibold mt-0.5 text-sky-400">Poly White Pvt. Ltd.</div>
+            </div>
+            
+            <div class="content-panel bg-[#091026]/40 border-slate-800/80">
+              <h4 class="text-slate-200 font-bold mb-3 uppercase tracking-wider text-xs text-sky-400">Manufacturing Operations</h4>
+              <ul class="space-y-2.5 text-slate-300 text-sm">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-gear text-sky-400 text-xs mt-1 flex-shrink-0"></i>
+                  <span>Embedded in high-volume <strong>HDPE injection molding operations</strong> specifically for the manufacturing of Fischer wall plugs.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-gear text-sky-400 text-xs mt-1 flex-shrink-0"></i>
+                  <span>Studied and documented end-to-end manufacturing workflows, strict quality control checks, and production process coordination.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-gear text-sky-400 text-xs mt-1 flex-shrink-0"></i>
+                  <span>Conducted observational analysis of molding tooling, machine operations, and standard industrial manufacturing practices on the floor.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-pad reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="section-head projects-head">
+        <div class="w-full flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div class="section-kicker">Technical Showcases</div>
+            <h2 class="section-title">CAD, Assemblies & Structural Modeling</h2>
+            <p class="section-copy">
+              A carefully structured collection covering multi-part mechanical assemblies, functional sheet metal models, structural frameworks, and R&D validation projects.
+            </p>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <p class="section-count text-slate-400"><span id="count" class="text-orange-400 font-bold text-lg">0</span> records populated</p>
+          </div>
+        </div>
+
+        <div class="controls-wrap mt-6">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass text-orange-500"></i>
+            <input
+              id="search"
+              type="text"
+              placeholder="Query database: assembly, sheet metal, vice, coupling..."
+            />
+          </div>
+
+          <div id="filters" class="filter-wrap">
+            <button data-cat="all" class="active">All Subsystems</button>
+            <button data-cat="assembly">Assemblies</button>
+            <button data-cat="sheetmetal">Sheet Metal</button>
+            <button data-cat="weldments">Weldments</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-grid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-8"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section-pad section-muted reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Technical Index</div>
+          <h2 class="section-title">Core Skills & Competencies</h2>
+          <p class="section-copy">Targeted execution vectors across parametric computer-aided design, documentation architecture, and development principles.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="skill-panel">
+          <div class="skill-top">
+            <i class="fa-solid fa-cube text-orange-500"></i>
+            <h3>Mechanical Design</h3>
+          </div>
+          <ul>
+            <li>SolidWorks (Part Modeling & Assemblies)</li>
+            <li>Enclosure Design & Fitment</li>
+            <li>Engineering Documentation</li>
+            <li>Mechanism Design</li>
+            <li>Industrial Design Applications</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-top">
+            <i class="fa-solid fa-industry text-sky-400"></i>
+            <h3>Manufacturing & Prototyping</h3>
+          </div>
+          <ul>
+            <li>SLA & FDM 3D Printing Tools</li>
+            <li>Design for Manufacturing (DFM)</li>
+            <li>Design for Assembly (DFA)</li>
+            <li>Injection Molding Basics</li>
+            <li>GD&T Baseline Application</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <div class="skill-top">
+            <i class="fa-solid fa-screwdriver-wrench text-amber-500"></i>
+            <h3>Engineering & Research</h3>
+          </div>
+          <ul>
+            <li>Failure Mode and Effects Analysis (FMEA)</li>
+            <li>Product Development Lifecycle Support</li>
+            <li>Composite Material Research (GFRP)</li>
+            <li>Usability & Ergonomics Testing</li>
+            <li>Iterative Design Validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-pad reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Channels</div>
+          <h2 class="section-title">Initiate Technical Communication</h2>
+          <p class="section-copy">
+            Currently accepting professional placement communications and engineering collaboration requests.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-12">
+        <div class="space-y-4">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div class="contact-label">Email Dataway</div>
+              <a href="mailto:Aditya818211@gmail.com">Aditya818211@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <div class="contact-label">Telephonic Line</div>
+              <a href="tel:+918586882169">+91 858 688 2169</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div class="contact-label">Location</div>
+              <span class="text-white font-semibold">Ghaziabad, UP</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-file-pdf"></i>
+            <div>
+              <div class="contact-label">Engineering Dossier</div>
+              <a href="Aditya_Pal_Resume.pdf" download>Download Aditya_Pal_Resume.pdf</a>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          onsubmit="event.preventDefault(); alert('Transmission logged. For immediate verification, consider launching a direct email loop.');"
+        >
+          <div class="form-head">
+            <h3>Dispatch Inbound Message</h3>
+            <p class="text-slate-400 text-sm">Please utilize direct mail channels for fast processing.</p>
+          </div>
+
+          <input type="text" placeholder="Identity / Organization" required>
+          <input type="email" placeholder="Communication Node (Email Address)" required>
+          <textarea rows="4" placeholder="Brief technical summary, requirement scope, or vacancy detail..." required></textarea>
+
+          <button type="submit" class="btn btn-primary w-full justify-center">Transmit Protocol</button>
+        </form>
+      </div>
+
+      <div class="footer-note">
+        © <span id="year"></span> Aditya Pal • Portfolio Engine Structured for Industrial Verification.
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
